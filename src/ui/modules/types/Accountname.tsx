@@ -8,7 +8,6 @@ export function createEmptyAccountname(): Name {
     symbol: '',
     source: '',
     decimals: 0,
-    petname: '',
     isCustom: false,
     isPrefund: false,
     isContract: false,

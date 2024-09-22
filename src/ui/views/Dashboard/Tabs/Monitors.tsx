@@ -43,7 +43,6 @@ export const Monitors = () => {
   const monitorsCall = useSdk(() => getStatus({
     chain: chain.chain,
     modes: ['monitors'],
-    verbose: true,
     chains: true,
   }), undefined, []) as CallStatus<Config[]>;
   if (isFailedCall(monitorsCall)) {
@@ -247,7 +246,7 @@ function getMonitorSchema(chain: Chain): ColumnsType<Monitor> {
       dataIndex: 'searchStr',
       configuration: {
         render: (unused, record) => (record.address
-          ? <ClickableAddress name={record.name} address={record.address} />
+          ? <ClickableAddress name={record.address} address={record.address} />
           : null
         ),
         width: 500,
@@ -266,12 +265,6 @@ function getMonitorSchema(chain: Chain): ColumnsType<Monitor> {
     addNumColumn({
       title: 'nAppearances',
       dataIndex: 'nApps',
-      configuration: {
-        sorter: {
-          compare: (a, b) => a.nApps - b.nApps,
-          multiple: 1,
-        },
-      },
     }),
     addNumColumn({
       title: 'firstAppearance',
@@ -323,7 +316,7 @@ function getTableActions(chain: Chain) {
           console.log('VIEW');
           break;
         default:
-          console.log('Unknown action', action, monitor.name);
+          console.log('Unknown action', action, monitor.address);
           break;
       }
     };

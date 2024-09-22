@@ -96,10 +96,9 @@ export const App = () => {
   useEffect(() => {
     const fetchStatus = async () => {
       const statusResponse = wrapResponse(await getStatus({
-        modes: ["some"],
+        modes: ['some'],
         chain: chain.chain,
         fmt: 'json',
-        verbose: true,
         chains: true,
       }));
 

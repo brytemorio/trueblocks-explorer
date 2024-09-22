@@ -101,7 +101,7 @@ const statementHeader = (statement: Statement, details: boolean, setShowDetails:
 
 //-----------------------------------------------------------------
 const statementBody = (statement: Statement, details: boolean, styles: any) => {
-  const preAppBlkStr = statement.prevAppBlk === undefined ? '0' : statement.prevAppBlk.toString();
+  const preAppBlkStr = '0'; // statement.prevAppBlk === undefined ? '0' : statement.prevAppBlk.toString();
   const rowStyle = styles.tableRow;
   const detailView = !details ? <></> : (
     <>

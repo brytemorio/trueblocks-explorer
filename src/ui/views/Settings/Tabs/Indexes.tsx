@@ -2,7 +2,8 @@ import React, { useEffect, useMemo } from 'react';
 
 import { ColumnsType } from 'antd/lib/table';
 import {
-  Config, getStatus, CacheRecordUp,
+  CacheRecordUp,
+  Config, getStatus,
 } from 'trueblocks-sdk';
 
 import { BaseView } from '@components/BaseView';
@@ -30,7 +31,6 @@ export const IndexesView = () => {
   const statusCall = useSdk(() => getStatus({
     chain: chain.chain,
     modes: ['index'],
-    verbose: true,
     chains: true,
   }));
 

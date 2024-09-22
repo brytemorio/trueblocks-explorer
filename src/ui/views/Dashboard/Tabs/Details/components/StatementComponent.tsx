@@ -34,10 +34,10 @@ export const StatementComponent = ({ statement }: { statement: Statement }) => {
         {showValue(pricedRecon.begBal.toString(), true)}
       </td>
       <td key={`${k}-3`} className={style.col} style={{ width: '17%' }}>
-        {showValue(pricedRecon.totalIn.toString())}
+        {showValue(pricedRecon.totalIn ? pricedRecon.totalIn.toString() : '')}
       </td>
       <td key={`${k}-4`} className={style.col} style={{ width: '17%' }}>
-        {showValue(pricedRecon.totalOutLessGas.toString())}
+        {showValue(pricedRecon.totalOutLessGas ? pricedRecon.totalOutLessGas.toString() : '')}
       </td>
       <td key={`${k}-5`} className={style.col} style={{ width: '17%' }}>
         {showValue(gasOutStr, false, true)}
