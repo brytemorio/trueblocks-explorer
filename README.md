@@ -1,5 +1,11 @@
 # TrueBlocks Explorer
 
+<hr>
+
+<font color="red"><b>IMPORTANT NOTE</b>: THIS REPO IS NO LONGER MAINTAINED. THE FUNCTIONALITY FORMERLY PROVIDED BY THIS REPO HAS BEEN MOVED TO [TRUEBLOCKS BROWSE](https://github.com/TrueBlocks/trueblocks-browse). PLEASE USE THAT REPO INSTEAD.</font>
+
+<hr>
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/TrueBlocks/trueblocks-explorer)
 ![GitHub contributors](https://img.shields.io/github/contributors/TrueBlocks/trueblocks-explorer)
 ![GitHub stars](https://img.shields.io/github/stars/TrueBlocks/trueblocks-explorer?style%3Dsocial)
@@ -9,7 +15,6 @@
 [![Website](https://img.shields.io/badge/Website-quickblocks.io-brightgreen.svg)](https://quickblocks.io/)
 [![TrueBlocks](https://img.shields.io/badge/Trueblocks-explorer-blue.svg)](https://github.com/TrueBlocks/trueblocks-explorer)
 [![React](https://img.shields.io/badge/React-node.js-purple.svg)](https://reactjs.org/)
-
 
 TrueBlocks lets you explore the Ethereum blockchain in a fully-local and therefore fully-private way. This repo provides an example of a frontend application for the TrueBlocks backend: [TrueBlocks core](https://github.com/TrueBlocks/trueblocks-core).
 
